@@ -1,0 +1,11 @@
+#!/bin/sh
+
+(
+    # This delay is required. Might be because the X server isnt
+    # started yet.
+    sleep 10
+    xset s off
+    xset -dpms
+    xset s noblank
+
+) &
